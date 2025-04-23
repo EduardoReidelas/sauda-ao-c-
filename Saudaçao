@@ -1,0 +1,36 @@
+using System;
+
+class Program
+{
+    static void Main(string[] args)
+    {
+
+        SaudacaoPersonalizada();
+        MostrarDestinos();
+    }
+
+  
+    static void SaudacaoPersonalizada()
+    {
+        Console.Write("Olá! Qual é o seu nome? ");
+        string nome = Console.ReadLine();
+        Console.WriteLine($"Prazer em te conhecer, {nome}!\n");
+    }
+
+   
+    static void MostrarDestinos()
+    {
+        Console.WriteLine("Me diga três lugares que você gostaria de conhecer:");
+        
+        Console.Write("1º lugar: ");
+        string lugar1 = Console.ReadLine();
+        
+        Console.Write("2º lugar: ");
+        string lugar2 = Console.ReadLine();
+        
+        Console.Write("3º lugar: ");
+        string lugar3 = Console.ReadLine();
+
+        Console.WriteLine($"\nQue legal! {lugar1}, {lugar2} e {lugar3}!");
+    }
+}
